@@ -6,6 +6,8 @@ import { NgModule } from '@angular/core';
 import { APP_ROUTING } from './app.routes';
 
 
+// Servicios
+import { BoardsService } from './services/boards.service';
 
 
 
@@ -15,6 +17,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { BoardsComponent } from './components/boards/boards.component';
+import { BoardComponent } from './components/board/board.component';
 
 @NgModule({
   declarations: [
@@ -22,13 +25,16 @@ import { BoardsComponent } from './components/boards/boards.component';
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    BoardsComponent
+    BoardsComponent,
+    BoardComponent
   ],
   imports: [
     BrowserModule,
     APP_ROUTING
   ],
-  providers: [],
+  providers: [
+    BoardsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

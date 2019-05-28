@@ -1,0 +1,31 @@
+<h1 class="animated fadeIn"> {{ board.nombre | uppercase }} <small> ( {{ board.puntuacion }} ) </small></h1>
+<hr>
+
+<div class="row animated fadeIn fast">
+
+    <div class="col-md-4">
+
+        <img [src]="board.img" class="img-fluid" [alt]="board.nombre">
+        <br>
+        <a [routerLink]="['/boards']" href="boards" class="btn btn-outline-danger btn-block">Regresar</a>
+
+    </div>
+
+
+    <div class="col-md-8">
+
+        <h3>{{ board.nombre }}</h3>
+        <hr>
+        <p class="jumbotron">
+            {{ board.bio }}
+        </p>
+        <h3>
+            {{ board.precio }}
+        </h3>
+        <div>
+            <img src="" alt="">
+        </div>
+
+    </div>
+
+</div>
