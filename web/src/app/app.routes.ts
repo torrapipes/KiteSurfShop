@@ -5,6 +5,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { BoardsComponent } from './components/boards/boards.component';
 import { BoardComponent } from './components/board/board.component';
+import { SearchComponent } from './components/search/search.component';
 
 
 const ROUTES: Routes = [
@@ -12,6 +13,7 @@ const ROUTES: Routes = [
     { path: 'about', component: AboutComponent },
     { path: 'boards', component: BoardsComponent },
     { path: 'board/:id', component: BoardComponent },
+    { path: 'search/:term', component: SearchComponent },
     { path: '**', redirectTo: 'home' },
 ];
 

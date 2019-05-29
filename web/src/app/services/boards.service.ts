@@ -69,6 +69,30 @@ export class BoardsService {
      return this.boards[idx];
    }
 
+   searchBoards( term: string ):Board[] {
+
+    let boardsArr: Board[] = [];
+    term = term.toLowerCase();
+
+    for( let i = 0; i < this.boards.length; i ++ ){
+
+      let board = this.boards[i];
+
+      let nombre = board.nombre.toLowerCase();
+
+      if( nombre.indexOf( term ) >= 0  ){
+        board.idx = i;
+        boardsArr.push( board );
+      }
+
+    }
+
+
+    return boardsArr;
+
+
+   }
+
 
 }
 
