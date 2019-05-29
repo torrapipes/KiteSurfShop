@@ -19,7 +19,6 @@ import { AboutComponent } from './components/about/about.component';
 import { BoardsComponent } from './components/boards/boards.component';
 import { BoardComponent } from './components/board/board.component';
 import { SearchComponent } from './components/search/search.component';
-import { BoardCardComponent } from './components/board-card/board-card.component';
 
 @NgModule({
   declarations: [
@@ -29,9 +28,8 @@ import { BoardCardComponent } from './components/board-card/board-card.component
     AboutComponent,
     BoardsComponent,
     BoardComponent,
-    SearchComponent,
-    BoardCardComponent
-  ],
+    SearchComponent
+    ],
   imports: [
     BrowserModule,
     APP_ROUTING

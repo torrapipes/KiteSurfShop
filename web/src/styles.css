@@ -6,6 +6,10 @@ body {
     margin-top: 20px;
 }
 
+.cust a {
+    font-size: 1.2em !important;
+}
+
 
 /* Animations */
 

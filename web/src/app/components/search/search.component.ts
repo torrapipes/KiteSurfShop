@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { BoardsService } from '../../services/boards.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-search',
@@ -12,7 +14,8 @@ export class SearchComponent implements OnInit {
   term: string;
 
   constructor( private activatedRoute: ActivatedRoute,
-               private _boardsService: BoardsService) { }
+               private _boardsService: BoardsService,
+               private router: Router) { }
 
   ngOnInit() {
 
@@ -24,6 +27,10 @@ export class SearchComponent implements OnInit {
 
     });
 
+  }
+
+  seeBoard( idx: number ) {
+    this.router.navigate( ['/board', idx] );
   }
 
 }
