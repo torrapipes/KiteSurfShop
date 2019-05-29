@@ -19,6 +19,7 @@ import { AboutComponent } from './components/about/about.component';
 import { BoardsComponent } from './components/boards/boards.component';
 import { BoardComponent } from './components/board/board.component';
 import { SearchComponent } from './components/search/search.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SearchComponent } from './components/search/search.component';
     AboutComponent,
     BoardsComponent,
     BoardComponent,
-    SearchComponent
+    SearchComponent,
+    FooterComponent
     ],
   imports: [
     BrowserModule,
