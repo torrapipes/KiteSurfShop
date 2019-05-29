@@ -1,6 +1,25 @@
 <h1 class="animated fadeIn fast"> About us</h1>
 <hr>
 
-<p class="fadeIn">
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia quasi laboriosam accusamus, facilis quos quae, nobis alias consequuntur exercitationem mollitia excepturi vitae eveniet molestias nesciunt minus laudantium in tempore quo!
-</p>
+<form>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">How old are you?</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+        <option>< 18 </option>
+        <option>> 18 </option>
+      </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Speak your mind!</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+
+    <button (click)="send()" type="button" class="btn btn-outline-primary">Send</button>
+    <div class="alert alert-success animated fadeIn m-5" *ngIf="isSended">
+        <p>Message was sent!</p>
+    </div>
+</form>

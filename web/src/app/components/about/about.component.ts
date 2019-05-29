@@ -6,9 +6,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  isSended: boolean;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  send() {
+    this.isSended = true;
+    setTimeout(() => {
+      this.isSended = false;
+    }, 3000);
   }
 
 }
