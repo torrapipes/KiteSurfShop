@@ -81,7 +81,7 @@ export class BoardsService {
       let nombre = board.nombre.toLowerCase();
 
       if( nombre.indexOf( term ) >= 0  ){
-        board.idx = i;
+        // board.idx = i;
         boardsArr.push( board );
       }
 
