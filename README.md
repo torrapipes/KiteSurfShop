@@ -1,10 +1,10 @@
 # KiteSurf Shop
 
-[home]: https://github.com/torrapipes/ProjecteWebLLM/webImg/home.jpg "Home"
-[boards]: https://github.com/torrapipes/ProjecteWebLLM/webImg/boards.jpg "Boards"
-[board]: https://github.com/torrapipes/ProjecteWebLLM/webImg/board.jpg "Board"
-[search]: https://github.com/torrapipes/ProjecteWebLLM/webImg/search.jpg "Search"
-[about]: https://github.com/torrapipes/ProjecteWebLLM/webImg/about.jpg "About"
+![home](https://github.com/torrapipes/ProjecteWebLLM/webImg/home.jpg)
+![boards](https://github.com/torrapipes/ProjecteWebLLM/webImg/boards.jpg) 
+![board](https://github.com/torrapipes/ProjecteWebLLM/webImg/board.jpg)
+![search](https://github.com/torrapipes/ProjecteWebLLM/webImg/search.jpg) 
+![about](https://github.com/torrapipes/ProjecteWebLLM/webImg/about.jpg)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
